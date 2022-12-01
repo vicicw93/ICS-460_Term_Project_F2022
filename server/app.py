@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, jsonify, Response
+from flask import Flask, request, json, Response
 from service import send_stock_price
 
 app = Flask(__name__)
@@ -14,10 +14,8 @@ def devices():
         "message": response_message
     }
 
-    print(response_message)
-
     return Response(
-        str(jsonify(response)),
+        response=json.dumps(response),
         status=response_status,
         mimetype='application/json'
     )

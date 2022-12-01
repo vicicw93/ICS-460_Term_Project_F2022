@@ -1,0 +1,52 @@
+{
+	"handler": {
+		"name": "price_api"
+	},
+	"intent": {
+		"name": "PRICE",
+		"params": {
+			"company": {
+				"original": "microsoft",
+				"resolved": "Microsoft"
+			}
+		},
+		"query": "Microsoft"
+	},
+	"scene": {
+		"name": "company",
+		"slots": {},
+		"next": {
+			"name": "actions.scene.END_CONVERSATION"
+		},
+		"slotFillingStatus": "UNSPECIFIED"
+	},
+	"session": {
+		"id": "ABwppHF1Pdbq_VEDQuY7laMPJddVPU4mv_iJx32KgSsmjTkdcF3AeSVCYGZeIscIe3CHrKCeqTzbr-p3olw5QRPg",
+		"params": {},
+		"typeOverrides": [],
+		"languageCode": ""
+	},
+	"user": {
+		"locale": "en-US",
+		"params": {},
+		"accountLinkingStatus": "ACCOUNT_LINKING_STATUS_UNSPECIFIED",
+		"verificationStatus": "VERIFIED",
+		"lastSeenTime": "2022-11-26T18:36:46Z",
+		"packageEntitlements": [],
+		"gaiamint": "",
+		"permissions": []
+	},
+	"device": {
+		"capabilities": [
+			"SPEECH",
+			"LONG_FORM_AUDIO"
+		],
+		"timeZone": {
+			"id": "America/Chicago",
+			"version": ""
+		}
+	},
+	"home": {
+		"params": {}
+	}
+}
